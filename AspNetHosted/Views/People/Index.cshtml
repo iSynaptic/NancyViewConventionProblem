@@ -1,0 +1,7 @@
+﻿@inherits Nancy.ViewEngines.Razor.NancyRazorViewBase<string[]>
+<ul>
+    @foreach (var url in Model)
+    {
+        <li><a href="@url">@url</a></li>
+    }
+</ul>
